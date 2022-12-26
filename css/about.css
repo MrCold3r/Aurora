@@ -1,0 +1,528 @@
+@font-face {
+    font-family: 'Vogue Regular';
+    src: url(../fonts/Vogue.woff);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/aboutusheaderbg.jpg);    background-size: cover;
+    background-size: cover;
+}
+
+/* Navbar */
+
+.navbar a{
+    color: #FFFFFF;
+    margin-top: 13px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #ff9b9b;
+}
+
+header .col-4{
+    display: flex;
+}
+
+.middlenav{
+    justify-content: center;
+}
+
+.middlenav li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.leftlogo{
+    margin-top: 20px;
+}
+
+.leftlogo svg{
+    margin-left: 50px;
+}
+
+.rightnav{
+    justify-content: end;
+}
+
+.rightnav .navbar{
+    margin-right: 50px;
+}
+
+.rightnav li{
+    margin-left: 10px;
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: #ff9b9b;
+}
+
+/* Search */
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+input{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    color: #FFFFFF;
+    border: 2px solid #ff9b9b;
+    background-color: transparent;
+    display: none;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 0 20px;
+    transition: all .2s ease-in-out;
+}
+
+input::placeholder{
+    color: #FFFFFF;
+}
+
+.nav-item svg{
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 22px;
+    right: 0;
+    border-radius: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    transition: all .2s ease-in-out;
+}
+
+form:hover{
+    width: 110px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+.heading h1{
+    font-family: 'Vogue Regular';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 260px;
+    margin-left: 710px;
+}
+
+.readmore{
+    margin-left: 125px;
+}
+
+.readmore a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.readmore button{
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+
+.readmore .btn-primary{
+    --bs-btn-active-bg: #d68181;
+    --bs-btn-active-border-color: #d68181;
+}
+
+.readmore button:hover{
+    background-color: #ff9b9b;
+    border-color: #ff9b9b;
+}
+
+.textcontainer{
+    width: 494px;
+    margin-top: 80px;
+    margin-left: 125px;
+}
+
+.toptext{
+    margin-top: 40px;
+}
+
+.toptext p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #D2CDCD;
+}
+
+.bottomtext{
+    margin-top: 30px;
+}
+
+.bottomtext p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #D2CDCD;
+}
+
+
+/* Here ends Header */
+
+/* Section */
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.headingcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.headingdiv{
+    width: 600px;
+}
+
+section h1{
+    font-family: 'Vogue Regular';
+    text-align: center;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 43px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.plancontainer{
+    margin-top: 35px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    width: 310px;
+    height: 370px;
+}
+
+.plancontainerbig{
+    background-color: #020202;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    width: 310px;
+    height: 440px;
+}
+
+.pancontainer h5, h5{
+    font-family: 'Vogue Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: #020202;
+    padding-top: 30px;
+}
+
+.pancontainer h6, h6{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    padding-top: 5px;
+}
+
+.pancontainer p, p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #747171;
+    padding-top: 5px;
+}
+
+.pancontainer ul li,li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    color: #747171;
+    margin-left: -15px;
+}
+
+.blackh5{
+    font-family: 'Vogue Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.blackh6{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.blackp{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #BAB6B6;
+}
+
+.blackli{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-left: -15px;
+}
+
+.plancontainer ul{
+    list-style: none;
+}
+  
+.plancontainer ul li:before{
+    content: '✓';
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.plancontainerbig ul{
+    list-style: none;
+}
+  
+.plancontainerbig ul li:before{
+    content: '✓';
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.joinnow{
+    display: flex;
+    justify-content: center;
+}
+
+.lastjoin{
+    padding-top: 35px;
+}
+
+.joinnow a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #747171;
+}
+
+.joinnow button{
+    background-color: transparent;
+    border: 2px solid #747171;
+    color: #747171;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+
+.joinnow .btn-primary{
+    --bs-btn-active-bg: #747171;
+    --bs-btn-active-border-color: #747171;
+}
+
+.joinnow button:hover{
+    background-color: #747171;
+    border-color: #747171;
+}
+
+.secondjoin{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.secondjoin a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.secondjoin button{
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+
+.secondjoin .btn-primary{
+    --bs-btn-active-bg: #747171;
+    --bs-btn-active-border-color: #747171;
+}
+
+.secondjoin button:hover{
+    background-color: #747171;
+    border-color: #747171;
+}
+
+/* Here end Section */
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 55vh;
+    background-color: #020202;
+}
+
+.footergrid1{
+    width: 50%;
+}
+
+.footergrid svg{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.footertext{
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.footertext p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D2CDCD;
+}
+
+.socialicons{
+    display: inline-block;
+}
+
+.socialicons a{
+    text-decoration: none;
+}
+
+.socialssvg{
+    transition: all .2s ease-in-out;
+}
+
+.socialssvg:hover{
+    fill: #59595B;
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #BAB6B6;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.footergrid2{
+    width: 16.6%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footergrid2 a{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.footergrid2 a:hover{
+    color: #59595B;
+}
+
+.footergrid3{
+    width: 16.7%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footergrid3 a{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.footergrid3 a:hover{
+    color: #59595B;
+}
+
+.footergrid4{
+    width: 16.7%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footergrid4 a{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.footergrid4 a:hover{
+    color: #59595B;
+}
+
+.firstatag{
+    font-weight: bold !important;
+    font-size: 15px !important;
+    line-height: 15px !important;
+}
+
+/* Here ends Footer */
+
+.initials{
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: #c2c2c2;
+    /* This is me.. ha ha */
+}
+
+
+
+

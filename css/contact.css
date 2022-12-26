@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'Vogue Regular';
+    src: url(../fonts/Vogue.woff);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/contactusheaderbg.jpg);
+    background-size: cover;
+}
+
+/* Navbar */
+
+.navbar a{
+    color: #FFFFFF;
+    margin-top: 13px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #ff9b9b;
+}
+
+header .col-4{
+    display: flex;
+}
+
+.middlenav{
+    justify-content: center;
+}
+
+.middlenav li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.leftlogo{
+    margin-top: 20px;
+}
+
+.leftlogo svg{
+    margin-left: 50px;
+}
+
+.rightnav{
+    justify-content: end;
+}
+
+.rightnav .navbar{
+    margin-right: 50px;
+}
+
+.rightnav li{
+    margin-left: 10px;
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: #ff9b9b;
+}
+
+/* Search */
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+input{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    color: #FFFFFF;
+    border: 2px solid #ff9b9b;
+    background-color: transparent;
+    display: none;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 0 20px;
+    transition: all .2s ease-in-out;
+}
+
+input::placeholder{
+    color: #FFFFFF;
+}
+
+.nav-item svg{
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 22px;
+    right: 0;
+    border-radius: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    transition: all .2s ease-in-out;
+}
+
+form:hover{
+    width: 110px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+.heading h1{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: -70px;
+    font-family: 'Vogue Regular';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 260px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.submit a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.submit button{
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+
+.submit .btn-primary{
+    --bs-btn-active-bg: #514f07;
+    --bs-btn-active-border-color: #514f07;
+}
+
+.submit button:hover{
+    background-color: #514f07;
+    border-color: #514f07;
+}
+
+.textcontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.lefttext p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #D2CDCD;
+}
+
+.righttext p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #D2CDCD;
+}
+
+/* Forms */
+
+.centerform{
+    display: flex;
+    justify-content: center;
+}
+
+.messageform{
+    text-align: center;
+    height: 170px;
+    width: 300px;
+    background-color: white;
+}
+
+.onlyborder{
+    border-top: 2px solid #59595b84;
+    border-bottom: 2px solid #59595b84;
+}
+
+
+.msgform{
+    width: 300px;
+    height: 60px;
+    border-radius: 0;
+    border: none;
+}
+
+.msgform::-webkit-scrollbar {
+    display: none;
+  }
+
+.resizenone{
+    resize: none;
+}
+
+.form-floating textarea{
+    outline: none;
+    padding-top: 30px;
+    padding-left: 13px;
+    
+}
+
+.form-floating label{
+    margin-top: -15px;
+    font-weight: bold;
+}
+
+/* Forms end */
+
+/* Here ends Header */
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 55vh;
+    background-color: #020202;
+}
+
+.footergrid1{
+    width: 50%;
+}
+
+.footergrid svg{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.footertext{
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.footertext p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D2CDCD;
+}
+
+.socialicons{
+    display: inline-block;
+}
+
+.socialicons a{
+    text-decoration: none;
+}
+
+.socialssvg{
+    transition: all .2s ease-in-out;
+}
+
+.socialssvg:hover{
+    fill: #59595B;
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #BAB6B6;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.footergrid2{
+    width: 16.6%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footergrid2 a{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.footergrid2 a:hover{
+    color: #59595B;
+}
+
+.footergrid3{
+    width: 16.7%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footergrid3 a{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.footergrid3 a:hover{
+    color: #59595B;
+}
+
+.footergrid4{
+    width: 16.7%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footergrid4 a{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.footergrid4 a:hover{
+    color: #59595B;
+}
+
+.firstatag{
+    font-weight: bold !important;
+    font-size: 15px !important;
+    line-height: 15px !important;
+}
+
+/* Here ends Footer */
+
+.initials{
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: #c2c2c2;
+    /* This is me.. ha ha */
+}
+
